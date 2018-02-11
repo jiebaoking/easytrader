@@ -35,6 +35,7 @@ class BaseFollower(object):
             'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'en-US,en;q=0.8',
+            'Cookie':'s=fu1tfov3h3; device_id=562beff3d9fefaa488186a7260e0e11a; bid=9873db07c633521de9081374178e8b75_jdfu5coz; __utma=1.1037661121.1518239629.1518239629.1518239629.1; __utmz=1.1518239629.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); aliyungf_tc=AQAAAAHqGHWo3wAAyijtdLHHykM2ZSVF; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_a_token=98ce654380f9c32d0fe6ba4cfccf2f97687c84c2; xq_a_token.sig=4RyKFDPDhGkhW4GDKpKBEXnbOcE; xq_r_token=abaa5aabbd22066e485292784f8f0e99710b7046; xq_r_token.sig=pmnDgu1JPz_fBaKdLIlGZEUjNqA; xq_is_login=1; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u=4382927175; u.sig=v2hrXgFxyYY_ybd88qNgrch6nYk; Hm_lvt_1db88642e346389874251b5a1eded6e3=1518174652,1518193947,1518257772,1518275437; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1518276181',
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36',
             'Referer': self.WEB_REFERER,
             'X-Requested-With': 'XMLHttpRequest',
