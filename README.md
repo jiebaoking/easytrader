@@ -1,3 +1,5 @@
 #easytrader
 
 修改了follower：headers中增加cookies，修改user_agent,否则无法获取雪球组合调仓信息
+
+调整了balance读取设置，否则海通系统字段不同，无法读取balance数据
