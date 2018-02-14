@@ -139,12 +139,15 @@ class ClientTrader:
     def _get_balance_from_statics(self):
         result = {}
         for key, control_id in self._config.BALANCE_CONTROL_ID_GROUP.items():
-            result[key] = float(
-                self._main.window(
-                    control_id=control_id,
-                    class_name='Static',
-                ).window_text()
-            )
+            try:
+                result[key] = float(
+                    self._main.window(
+                        control_id=control_id,
+                        class_name='Static',
+                    ).window_text()
+                )
+            except:
+                pass
         return result
 
     @property
