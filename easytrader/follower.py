@@ -14,6 +14,13 @@ from six.moves.queue import Queue
 
 from .log import log
 
+###增加交易时间的判断
+import time
+import easyutils
+###
+
+
+
 
 class BaseFollower(object):
     LOGIN_PAGE = ''
@@ -147,7 +154,13 @@ class BaseFollower(object):
                     trade_cmd['datetime']
                 ))
                 self.trade_queue.put(trade_cmd)
-                self.add_cmd_to_expired_cmds(trade_cmd)
+                self.add_cmd_to_expired_cmds(trade_cmd）
+            ###判断是否为非交易时间
+            #easyutils.is_holiday(time.strftime('%Y%m%d',time.localtime(time.time())))
+            if not easyutils.is_tradetime_now():
+                print('非交易时间')
+                break
+            ###                                
             try:
                 for _ in range(interval):
                     time.sleep(1)
