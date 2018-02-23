@@ -154,7 +154,7 @@ class BaseFollower(object):
                     trade_cmd['datetime']
                 ))
                 self.trade_queue.put(trade_cmd)
-                self.add_cmd_to_expired_cmds(trade_cmd）
+                self.add_cmd_to_expired_cmds(trade_cmd)
             ###判断是否为非交易时间
             #easyutils.is_holiday(time.strftime('%Y%m%d',time.localtime(time.time())))
             if not easyutils.is_tradetime_now():
