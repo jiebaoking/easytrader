@@ -186,12 +186,12 @@ class ClientTrader:
 
     def buy(self, security, price, amount, **kwargs):
         self._switch_left_menus(['买入[F1]'])
-
+        price=round(price*1.02)
         return self.trade(security, price, amount)
 
     def sell(self, security, price, amount, **kwargs):
         self._switch_left_menus(['卖出[F2]'])
-
+        price=round(price*0.98)
         return self.trade(security, price, amount)
 
     def market_buy(self, security, amount, ttype=None, **kwargs):
